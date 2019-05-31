@@ -2,5 +2,5 @@
 - Naam:Emmeline
 - Familienaam:Martens
 - studentennummer:105061
-- XD prototype link: https://xd.adobe.com/spec/f106f580-d7d6-4724-78ea-61da89ab16ac-8737/
+- XD prototype link: https://xd.adobe.com/view/e89d3923-0694-4c16-6d4a-3f6b17907dd6-9eac/
 - klasgroep:1MMPa
