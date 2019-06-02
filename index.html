@@ -1,12 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Eindopdracht UX</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Document</title>
+    <link href="//db.onlinewebfonts.com/c/fb472d305ee243190d1b04659778dbcb?family=Kohinoor" rel="stylesheet"
+        type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Josefin+Slab|PT+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/main.css">
 </head>
+
 <body>
+    <header>
+        <img src="../restoOudje/logoRestoOudje.png" alt="logoRestoOudje">
+        <nav>
+            <ul>
+                <li>
+                    <a class="homepagelinks" href="index.html">Home</a>
+                    <i class="fas fa-angle-down size"></i>
+                </li>
+
+                <li class="dropdown">
+                    <a class="homepagelinks" href="#">Menu</a>
+                    <button class="dropbtn"><i class="fas fa-angle-down size"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Aperitief</a>
+                        <a href="#">Voorgerechten</a>
+                        <a href="#">Hoofdgerechten</a>
+                        <a href="#">Dessert</a>
+                        <a href="#">Snacks</a>
+                        <a href="#">Wijnkaart</a>
+                        <a href="#">No alcohol</a>
+                        <a href="#">Sterke dranken</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="homepagelinks" href="#">Keukens</a>
+                    <button class="dropbtn"><i class="fas fa-angle-down size "></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Belgisch</a>
+                        <a href="#">Italiaans</a>
+                        <a href="#">Chinees</a>
+                        <a href="#">Frans</a>
+                        <a href="#">Aziatisch</a>
+                        <a href="#">Vegetarisch</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="homepagelinks" href="#">Openingsuren</a>
+                    <i class="fas fa-angle-down size"></i>
+                </li>
+                <li>
+                    <a class="homepagelinks" href="#">Locatie</a>
+                    <i class="fas fa-angle-down size"></i>
+                </li>
+                <li class="dropdown">
+                    <a class="homepagelinks" href="#">Contact</a>
+                    <button class="dropbtn"><i class="fas fa-angle-down size"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Over Ons</a>
+                        <a href="#">Klachten?</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="maincontainer">
+            <div class="filter">
+                <form class="search" action="action_page.php">
+                    <input type="text" placeholder="Search.." name="search" class="balk">
+                </form>
+                <div class="placing">
+                    <div class="categorie">
+                        Keukens
+                    </div>
+                    <div>
+                        <form action="submit" class="grid1">
+
+                            <p>
+                                <input type="radio"><label for="belgisch">Belgisch</label>
+                                <input type="radio"><label for="Italiaans">Italiaans</label>
+                                <input type="radio"><label for="Chinees">Chinees</label>
+                                <input type="radio"><label for="Frans">Frans</label>
+
+                            </p>
+                            <p>
+                                <input type="radio"><label for="Aziatisch">Aziatisch</label>
+                                <input type="radio"><label for="Vegetarisch">Vegetarisch</label>
+                            </p>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="placing">
+                    <div class="categorie">
+                        Wijnen
+                    </div>
+                    <div>
+                        <form action="submit" class="grid1">
+
+                            <p class="wijn">
+                                <input type="radio">
+                                <label for="wittewijn">witte</label>
+                            </p>
+                            <p>
+                                <input type="radio">
+                                <label for="rodewijn">rode</label>
+                            </p>
+
+
+
+                        </form>
+                    </div>
+
+                </div>
+                <div class="placing">
+                    <div class="categorie">
+                        Allergieën
+                    </div>
+                    <div>
+                        <form action="submit" class="grid1">
+
+                            <p>
+                                <input type="radio">
+                                <label for="lactosevrij">lactosevrij</label>
+                                <input type="radio">
+                                <label for="glutenvrij">glutenvrij</label>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <div class="placing">
+                    <div class="categorie">
+                        Aantal personen
+                    </div>
+                    <div>
+                        <form action="submit" class="grid2">
+
+                            <p>
+                                <input type="radio">
+                                <label for="one">1</label>
+                                <input type="radio">
+                                <label for="two">2</label>
+                            </p>
+
+                            <p>
+                                <input type="radio">
+                                <label for="three">3</label>
+                                <input type="radio">
+                                <label for="for">4</label>
+                            </p>
+
+                            <p>
+                                <input type="radio">
+                                <label for="five">5</label>
+                                <input type="radio">
+                                <label for="six">6</label>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <div class="placing prijs">
+                    <div class="categorie">
+                        Prijs
+                    </div>
+                    <p class="para">van <input class="vakje" type="text"> tot<input class="vakje" type="text"></p>
+                    <button id="zoek">Zoek</button>
+                </div>
+                <div class="placing">
+                    <div class="categorie ">
+                        Menukaart?
+                    </div>
+                    <a class="menukaart" href="#"> Link naar de menukaart</a>
+                </div>
+            </div>
+            <div id="fullpage">
+                <img src="../restoOudje/restoOudje.jpg" class="homepage" alt="homeimage">
+                <button id="reserveer"><a href="#">Reserveer nu</a></button>
+            </div>
+            <aside>               
+                <img id="spit" src="../restoOudje/aantspit.jpg" alt="aantSpit"><img id="wijntje" src="../restoOudje/wijntjedabei.jpg" alt="wijntjedabei"> 
+            </aside>
+        </div>
+
+    </main>
 </body>
+
 </html>
