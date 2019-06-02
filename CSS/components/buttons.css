@@ -1,0 +1,30 @@
+/*buttons*/
+#zoek {
+    width: 100px;
+    background-color: var(--color-white);
+    color: var(--color-purple);
+    font-family: var(--font-heading);
+    font-size: 12pt;
+    font-weight: 900;
+    border-radius: 10px;
+  }
+  
+  #reserveer {
+    width: 18%;
+    position: absolute;
+    background-color: var(--color-purple);
+    border: solid white 3px;
+    border-radius: 30px;
+    padding: 10px;
+    right: 300px;
+    bottom: 50px;
+  
+  }
+  
+  button#reserveer a {
+    color: var(--color-white);
+    font-size: 20pt;
+    font-weight: 900;
+    font-family: var(--font-heading);
+    text-decoration: none;
+  }

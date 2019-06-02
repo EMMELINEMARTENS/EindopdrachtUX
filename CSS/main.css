@@ -1,0 +1,258 @@
+/*@import*/
+
+@import url('variables.css');
+
+@import url('components/badges.css');
+@import url('components/buttons.css');
+@import url('components/cards.css');
+@import url('components/forms.css');
+@import url('components/grid.css');
+@import url(//db.onlinewebfonts.com/c/fb472d305ee243190d1b04659778dbcb?family=Kohinoor);
+
+@font-face {
+  font-family: "Kohinoor";
+  src: url("//db.onlinewebfonts.com/t/fb472d305ee243190d1b04659778dbcb.eot");
+  src: url("//db.onlinewebfonts.com/t/fb472d305ee243190d1b04659778dbcb.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/fb472d305ee243190d1b04659778dbcb.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/fb472d305ee243190d1b04659778dbcb.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/fb472d305ee243190d1b04659778dbcb.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/fb472d305ee243190d1b04659778dbcb.svg#Kohinoor") format("svg");
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--color-black);
+  height: 15vh;
+  width: 100%;
+}
+
+header img {
+  position: absolute;
+  width: 10%;
+  margin: 2% 0 0 1%;
+}
+
+/*navigatie opmaak*/
+nav {
+  padding: 4% 0 0 13%;
+  
+}
+
+nav ul li {
+  display: inline-block;
+  background-color: var(--color-purple);
+  margin-right: 1%;
+  width: 12%;
+  padding: 0.7% 0;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 14pt;
+  border: solid white 1px;
+  text-shadow: 2px 2px -2px -2px var(--color-grey-brown);
+  margin-top:1%;
+}
+
+a.homepagelinks {
+
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: 900;
+
+}
+
+/*dropmenu opmaak*/
+.dropbtn {
+  padding: 2px;
+  border: none;
+  background-color: var(--color-purple);
+
+}
+
+.size {
+  font-size: 20pt;
+  color: white;
+  font-weight: 900;
+  position: relative;
+  top: 2%;
+  padding: 2px;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--color-white);
+  width: 11%;
+  text-align: left;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 900;
+  font-size: 14pt;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--color-pruple);
+}
+
+/*body*/
+
+/*main*/
+main {
+  display: block;
+  width: 100%;
+
+}
+
+
+
+
+
+/*homepage design + hoofd afbeelding*/
+.homepage {
+  object-fit: cover;
+  width: 100%;
+  height: 90vh;
+}
+
+div.maincontainer {
+  display: flex;
+  background-color: var(--color-black);
+}
+
+.maincontainer div:nth-of-type(2) {
+  width: 80%;
+  overflow: hidden;
+
+}
+
+/*aside afbeeldingen*/
+
+aside {
+  width: 20%;
+}
+aside img {
+  width: 100%;
+  margin-bottom: -2%;
+}
+
+/* hover status*/
+nav ul li:hover {
+  background-color: var(--color-grey-white);
+
+}
+
+nav ul li a:hover {
+  color: var(--color-purple);
+}
+
+/*smartphone website*/
+@media only screen and (max-width : 600px) {
+  div.filter {
+    display: none;
+  }
+  body {
+    background-color: var(--color-lightbrown);
+    margin: 0;
+    padding: 0;
+  }
+  header img {
+    width: 20%;
+    margin: 0 0 1% 1%;
+  }
+
+  header {
+    height: 10vh;
+  }
+  nav ul{
+    margin: 6% -1% -1% -15%;
+    padding: 0;
+  }
+  nav ul li {
+    margin: 0 -0.8% 0 0;
+    width: 16%;
+    padding: 0.7% 0;
+  }
+  button.dropbtn {
+    position: relative;
+  }
+
+  i.size {
+    font-size: 8pt;
+    position: absolute;
+    top:0%;
+    top:12%;
+    
+  }
+
+  li {
+    margin: 0px;
+    padding: 0px 9px;
+    height: 5vh;
+    width: 100%
+  }
+
+
+  nav ul li a.homepagelinks {
+    font-size: 10pt;
+    width: 1%;
+  }
+  #fullpage{
+    width: 100%;
+  }
+  div .homepage {
+    width: 100%;
+    margin: 6% 0 -2% 0;
+  }
+
+  button#reserveer {
+    width: 50%;
+    left: 30%;
+    
+  }
+
+  div.maincontainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-lightbrown);
+
+  }
+  aside {
+    display: flex;
+    flex-direction: row;
+  }
+
+  div.dropdown {
+    display: none;
+  }
+
+  aside {
+    display: block;
+    background-color: green;
+    width: 100%;
+  }
+  aside img{
+    width: 50%;
+    float: left;
+  }
+
+}

@@ -1,0 +1,14 @@
+:root {
+  --color-purple: #914174;
+  --color-lightbrown:#A39086;
+  --color-black: #000000;
+  --color-darkbrown:#624040;
+  --color-white:#FFFFFF;
+  --color-grey-brown: #7B6960;
+  --color-grey-white: #E5E5E5;
+  --color-white: #FFF;
+  --font-body: "Kohinoor",'Hind Siliguri', sans-serif;
+  --font-heading: 'PT Serif', serif;
+  --font-search:'Josefin Slab', serif;
+  --unit: 0.9375rem;
+}
